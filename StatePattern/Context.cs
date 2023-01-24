@@ -1,12 +1,11 @@
-﻿// ReSharper disable CheckNamespace
-namespace DesignPatternDemo;
+﻿namespace StatePattern;
 
-public class TrafficLight
+public class Context
 {
     // Green, Red
     private State _state;
     
-    public TrafficLight()
+    public Context()
     {
         _state = new GreenLight();
     }

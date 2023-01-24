@@ -1,5 +1,4 @@
-﻿// ReSharper disable CheckNamespace
-namespace DesignPatternDemo;
+﻿namespace StatePattern;
 
 internal class GreenLight : State
 {
@@ -8,7 +7,7 @@ internal class GreenLight : State
         return nameof(GreenLight);
     }
 
-    public override void Change(TrafficLight light)
+    public override void Change(Context light)
     {
         base.Change(light);
         light.Set(new RedLight());
@@ -22,7 +21,7 @@ internal class RedLight : State
         return nameof(RedLight);
     }
 
-    public override void Change(TrafficLight light)
+    public override void Change(Context light)
     {
         base.Change(light);
         light.Set(new GreenLight());

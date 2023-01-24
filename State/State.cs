@@ -1,4 +1,5 @@
-﻿namespace StatePattern;
+﻿// ReSharper disable CheckNamespace
+namespace State;
 
 public abstract class State
 {

@@ -1,4 +1,4 @@
-﻿namespace StatePattern;
+﻿namespace State;
 
 internal class GreenLight : State
 {

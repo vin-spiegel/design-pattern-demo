@@ -1,4 +1,4 @@
-﻿namespace StatePattern;
+﻿namespace State;
 
 public class Context
 {

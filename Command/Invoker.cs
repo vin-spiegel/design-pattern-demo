@@ -1,6 +1,6 @@
 ﻿namespace Command;
 
-internal class Invoker
+public class Invoker
 {
     private readonly List<Command> _commands = new List<Command>();
 

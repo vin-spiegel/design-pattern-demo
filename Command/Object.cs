@@ -2,7 +2,7 @@
 
 namespace Command;
 
-class Dog
+public class Dog
 {
     public void Sit()
     {
@@ -15,10 +15,10 @@ class Dog
     }
 }
 
-class DogCommand : Command
+public class DogCommand : Command
 {
-    private Dog _dog;
-    private string[] _commands;
+    private readonly Dog _dog;
+    private readonly string[] _commands;
     
     public DogCommand(Dog dog, string[] commands)
     {
